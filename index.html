@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blood of Dawnwalker - Complete Guide & Wiki</title>
+    <meta name="description" content="Your ultimate guide to The Blood of Dawnwalker. Complete walkthroughs, boss strategies, combat systems, vampire mechanics, and collectible guides.">
+    <meta name="keywords" content="Blood of Dawnwalker, Dawnwalker guide, Blood of Dawnwalker wiki, vampire game, open world RPG guide">
+    <link rel="canonical" href="https://dawnwalker-wiki.com/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        blood: { 500: '#8B0000', 600: '#660000', 700: '#4A0000' },
+                        gold: { 400: '#D4AF37', 500: '#B8860B', 600: '#996515' },
+                        night: { 900: '#0a0a0f', 800: '#12121a', 700: '#1a1a24' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);
+            min-height: 100vh;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
+        }
+        .blood-glow {
+            box-shadow: 0 0 30px rgba(139, 0, 0, 0.4);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(139, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <!-- Header -->
+    <header class="bg-night-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blood-500 to-blood-700 rounded-lg flex items-center justify-center blood-glow">
+                        <span class="font-cinzel font-bold text-gold-400 text-lg">D</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">Dawnwalker Wiki</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-blood-500 hover:text-blood-400 transition-colors font-medium">Home</a>
+                    <a href="bosses.html" class="text-gray-300 hover:text-blood-500 transition-colors">Bosses</a>
+                    <a href="quests.html" class="text-gray-300 hover:text-blood-500 transition-colors">Quests</a>
+                    <a href="systems.html" class="text-gray-300 hover:text-blood-500 transition-colors">Systems</a>
+                    <a href="collectibles.html" class="text-gray-300 hover:text-blood-500 transition-colors">Collectibles</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-night-900 border-t border-gray-800">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/" class="block text-blood-500 font-medium py-2">Home</a>
+                <a href="bosses.html" class="block text-gray-300 hover:text-blood-500 py-2">Bosses</a>
+                <a href="quests.html" class="block text-gray-300 hover:text-blood-500 py-2">Quests</a>
+                <a href="systems.html" class="block text-gray-300 hover:text-blood-500 py-2">Systems</a>
+                <a href="collectibles.html" class="block text-gray-300 hover:text-blood-500 py-2">Collectibles</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h1 class="font-cinzel text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                        The Blood of Dawnwalker
+                        <span class="block text-2xl md:text-3xl text-blood-500 mt-2">Complete Guide & Wiki</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Your ultimate guide to the dark fantasy RPG. Complete walkthroughs, boss strategies, combat systems, and collectible guides.
+                    </p>
+                    <div class="mt-8 flex flex-wrap justify-center gap-4">
+                        <a href="#quick-facts" class="px-8 py-3 bg-gradient-to-r from-blood-600 to-blood-500 text-white font-semibold rounded-lg hover:from-blood-500 hover:to-blood-400 transition-all shadow-lg shadow-blood-500/30">
+                            Get Started
+                        </a>
+                        <a href="systems.html" class="px-8 py-3 bg-gradient-to-r from-gold-600 to-gold-500 text-white font-semibold rounded-lg hover:from-gold-500 hover:to-gold-400 transition-all shadow-lg shadow-gold-500/30">
+                            Explore Systems
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Facts -->
+                <div id="quick-facts" class="bg-gray-900/60 rounded-2xl border border-gray-700 p-6 md:p-8 mt-12 max-w-4xl mx-auto">
+                    <h2 class="font-cinzel text-2xl font-bold text-gold-400 mb-6 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                        Quick Facts
+                    </h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm mb-1">Developer</div>
+                            <div class="text-white font-semibold">Rebel Wolves</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm mb-1">Genre</div>
+                            <div class="text-white font-semibold">Dark Fantasy ARPG</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm mb-1">Platform</div>
+                            <div class="text-white font-semibold">PC, PS5, Xbox</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm mb-1">Release</div>
+                            <div class="text-blood-500 font-semibold">September 2, 2026</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm mb-1">IGN Rating</div>
+                            <div class="text-gold-400 font-semibold">9/10</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm mb-1">Metacritic</div>
+                            <div class="text-white font-semibold">83</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm mb-1">Sales</div>
+                            <div class="text-blood-500 font-semibold">1M+ (48h)</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-gray-400 text-sm mb-1">Setting</div>
+                            <div class="text-white font-semibold">14th Century Europe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About the Game -->
+        <section class="py-16 bg-night-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="font-cinzel text-3xl font-bold text-white mb-6">About The Game</h2>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        <strong class="text-blood-500">The Blood of Dawnwalker</strong> is an open-world dark fantasy action RPG developed by Rebel Wolves, a studio founded by former CD Projekt Red developers. You play as <strong class="text-gold-400">Coen</strong>, a man cursed to become a vampire at night while remaining human by day. With only <strong class="text-blood-500">30 days</strong> to save your family, every choice matters in this non-linear, narrative-driven adventure set in 14th-century dark fantasy Europe.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="bg-gray-900/50 rounded-xl p-6 border border-gray-700">
+                            <div class="text-4xl mb-3">🌙</div>
+                            <h3 class="font-cinzel text-lg font-bold text-white mb-2">Human by Day</h3>
+                            <p class="text-gray-400 text-sm">Explore the world freely, interact with NPCs, and gather information.</p>
+                        </div>
+                        <div class="bg-gray-900/50 rounded-xl p-6 border border-blood-500/30">
+                            <div class="text-4xl mb-3">🩸</div>
+                            <h3 class="font-cinzel text-lg font-bold text-blood-500 mb-2">Vampire by Night</h3>
+                            <p class="text-gray-400 text-sm">Unleash devastating vampire powers and stealth abilities.</p>
+                        </div>
+                        <div class="bg-gray-900/50 rounded-xl p-6 border border-gray-700">
+                            <div class="text-4xl mb-3">⏰</div>
+                            <h3 class="font-cinzel text-lg font-bold text-white mb-2">30 Days to Save Them</h3>
+                            <p class="text-gray-400 text-sm">Every decision impacts your race against time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation Cards -->
+        <section class="py-16 bg-night-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="font-cinzel text-3xl font-bold text-white text-center mb-12">
+                    Explore the Guide
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Bosses Card -->
+                    <a href="bosses.html" class="card-hover bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 p-6 block">
+                        <div class="w-14 h-14 bg-blood-500/20 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-blood-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Boss Guides</h3>
+                        <p class="text-gray-400 text-sm">Detailed strategies for every boss encounter. Learn patterns, weaknesses, and tactics.</p>
+                        <div class="mt-4 text-blood-500 text-sm font-medium flex items-center">
+                            View Boss Guides
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- Quests Card -->
+                    <a href="quests.html" class="card-hover bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 p-6 block">
+                        <div class="w-14 h-14 bg-gold-500/20 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Quest Walkthroughs</h3>
+                        <p class="text-gray-400 text-sm">Complete main story and side quest guides. Never get stuck again.</p>
+                        <div class="mt-4 text-gold-400 text-sm font-medium flex items-center">
+                            View Quests
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- Systems Card -->
+                    <a href="systems.html" class="card-hover bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 p-6 block">
+                        <div class="w-14 h-14 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Game Systems</h3>
+                        <p class="text-gray-400 text-sm">Combat mechanics, skill trees, vampire powers, and soul absorption.</p>
+                        <div class="mt-4 text-purple-400 text-sm font-medium flex items-center">
+                            Explore Systems
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- Collectibles Card -->
+                    <a href="collectibles.html" class="card-hover bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 p-6 block">
+                        <div class="w-14 h-14 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-2">Collectibles</h3>
+                        <p class="text-gray-400 text-sm">Find all items, unlock achievements, and complete your collection.</p>
+                        <div class="mt-4 text-emerald-400 text-sm font-medium flex items-center">
+                            View Collectibles
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Bosses -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="font-cinzel text-3xl font-bold text-white">Featured Bosses</h2>
+                    <a href="bosses.html" class="text-blood-500 hover:text-blood-400 font-medium flex items-center">
+                        View All
+                        <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Boss Card 1 -->
+                    <div class="card-hover bg-gray-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                        <div class="h-40 bg-gradient-to-br from-blood-600/30 to-gray-900/50 flex items-center justify-center">
+                            <span class="text-6xl">👹</span>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-xs text-blood-500 uppercase tracking-wide mb-1">Chapter 1</div>
+                            <h3 class="font-cinzel text-lg font-bold text-white mb-2">The First Blood</h3>
+                            <p class="text-gray-400 text-sm mb-3">Your introduction to vampire combat. Learn the basics of the transformation.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-gray-500">Difficulty: ★★☆☆☆</span>
+                                <a href="bosses.html" class="text-blood-500 text-sm hover:underline">View Guide</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boss Card 2 -->
+                    <div class="card-hover bg-gray-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                        <div class="h-40 bg-gradient-to-br from-purple-600/30 to-gray-900/50 flex items-center justify-center">
+                            <span class="text-6xl">🦇</span>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-xs text-blood-500 uppercase tracking-wide mb-1">Chapter 3</div>
+                            <h3 class="font-cinzel text-lg font-bold text-white mb-2">Shadow of the Night</h3>
+                            <p class="text-gray-400 text-sm mb-3">Master stealth and night abilities to defeat this elusive enemy.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-gray-500">Difficulty: ★★★☆☆</span>
+                                <a href="bosses.html" class="text-blood-500 text-sm hover:underline">View Guide</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boss Card 3 -->
+                    <div class="card-hover bg-gray-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                        <div class="h-40 bg-gradient-to-br from-gold-600/30 to-gray-900/50 flex items-center justify-center">
+                            <span class="text-6xl">⚔️</span>
+                        </div>
+                        <div class="p-5">
+                            <div class="text-xs text-blood-500 uppercase tracking-wide mb-1">Chapter 5</div>
+                            <h3 class="font-cinzel text-lg font-bold text-white mb-2">The Fallen Knight</h3>
+                            <p class="text-gray-400 text-sm mb-3">A formidable warrior wielding ancient powers. Parry timing is crucial.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-gray-500">Difficulty: ★★★★☆</span>
+                                <a href="bosses.html" class="text-blood-500 text-sm hover:underline">View Guide</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Systems Overview -->
+        <section class="py-16 bg-gradient-to-b from-blood-900/20 to-transparent">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-cinzel text-3xl font-bold text-white mb-4">Core Game Systems</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        Master these essential systems to survive the 30-day challenge and save your family.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Human Form -->
+                    <div class="bg-gray-900/80 rounded-xl border border-gray-700 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                                <span class="text-2xl">☀️</span>
+                            </div>
+                            <div>
+                                <h3 class="font-cinzel text-xl font-bold text-white">Human Form</h3>
+                                <p class="text-gray-400 text-sm">Daytime Abilities</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                                Free exploration without aggression
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                                NPC interactions and quest givers
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                                Information gathering
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                                Trade and crafting
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Vampire Form -->
+                    <div class="bg-gray-900/80 rounded-xl border border-blood-500/30 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blood-500/20 rounded-lg flex items-center justify-center mr-4">
+                                <span class="text-2xl">🌙</span>
+                            </div>
+                            <div>
+                                <h3 class="font-cinzel text-xl font-bold text-blood-500">Vampire Form</h3>
+                                <p class="text-gray-400 text-sm">Nighttime Powers</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blood-500 rounded-full mr-3"></span>
+                                Superhuman strength and speed
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blood-500 rounded-full mr-3"></span>
+                                Stealth and shadow abilities
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blood-500 rounded-full mr-3"></span>
+                                Soul absorption from enemies
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blood-500 rounded-full mr-3"></span>
+                                Blood-powered combat
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="systems.html" class="text-blood-500 hover:text-blood-400 font-medium inline-flex items-center">
+                        View All Systems
+                        <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-night-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blood-500 to-blood-700 rounded-lg flex items-center justify-center">
+                            <span class="font-cinzel font-bold text-gold-400 text-lg">D</span>
+                        </div>
+                        <span class="font-cinzel font-bold text-xl text-white">Dawnwalker Wiki</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Your complete guide to The Blood of Dawnwalker.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="bosses.html" class="text-gray-400 hover:text-blood-500">Boss Guides</a></li>
+                        <li><a href="quests.html" class="text-gray-400 hover:text-blood-500">Quest Walkthroughs</a></li>
+                        <li><a href="systems.html" class="text-gray-400 hover:text-blood-500">Game Systems</a></li>
+                        <li><a href="collectibles.html" class="text-gray-400 hover:text-blood-500">Collectibles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-blood-500">Official Website</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blood-500">Steam Page</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blood-500">Rebel Wolves</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-blood-500">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blood-500">Terms of Use</a></li>
+                        <li class="text-gray-500 text-xs mt-4">Not affiliated with Rebel Wolves.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Dawnwalker Wiki. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>

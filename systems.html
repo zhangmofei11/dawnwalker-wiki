@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Systems - The Blood of Dawnwalker Wiki</title>
+    <meta name="description" content="Master The Blood of Dawnwalker's core systems: vampire/human transformation, combat mechanics, skill trees, and soul absorption.">
+    <meta name="keywords" content="Blood of Dawnwalker systems, vampire mechanics, skill tree, soul absorption, combat guide">
+    <link rel="canonical" href="https://dawnwalker-wiki.com/systems.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        blood: { 500: '#8B0000', 600: '#660000', 700: '#4A0000' },
+                        gold: { 400: '#D4AF37', 500: '#B8860B', 600: '#996515' },
+                        night: { 900: '#0a0a0f', 800: '#12121a', 700: '#1a1a24' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(168, 85, 247, 0.2); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <!-- Header -->
+    <header class="bg-night-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blood-500 to-blood-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-gold-400 text-lg">D</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">Dawnwalker Wiki</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-blood-500 transition-colors">Home</a>
+                    <a href="bosses.html" class="text-gray-300 hover:text-blood-500 transition-colors">Bosses</a>
+                    <a href="quests.html" class="text-gray-300 hover:text-blood-500 transition-colors">Quests</a>
+                    <a href="systems.html" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Systems</a>
+                    <a href="collectibles.html" class="text-gray-300 hover:text-blood-500 transition-colors">Collectibles</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-night-900 border-t border-gray-800">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/" class="block text-gray-300 hover:text-blood-500 py-2">Home</a>
+                <a href="bosses.html" class="block text-gray-300 hover:text-blood-500 py-2">Bosses</a>
+                <a href="quests.html" class="block text-gray-300 hover:text-blood-500 py-2">Quests</a>
+                <a href="systems.html" class="block text-purple-400 font-medium py-2">Systems</a>
+                <a href="collectibles.html" class="block text-gray-300 hover:text-blood-500 py-2">Collectibles</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Game Systems</h1>
+            <p class="text-gray-400 max-w-3xl">
+                Master the core mechanics of The Blood of Dawnwalker. From vampire transformations to soul absorption,
+                understand how every system works to survive the 30-day challenge.
+            </p>
+        </div>
+
+        <!-- Systems Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Transformation System -->
+            <div class="card-hover bg-gray-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-blue-600/20 to-purple-600/20 flex items-center justify-center">
+                    <div class="text-center">
+                        <span class="text-6xl block">☀️🌙</span>
+                        <span class="text-sm text-gray-400 mt-2 block">Day / Night Cycle</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-2xl font-bold text-white mb-4">Transformation System</h3>
+                    <p class="text-gray-400 text-sm mb-6">
+                        The core mechanic of The Blood of Dawnwalker. Coen transforms between human and vampire
+                        based on the time of day, each with unique abilities.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="bg-gray-900/50 rounded-lg p-4">
+                            <div class="flex items-center mb-2">
+                                <span class="text-2xl mr-3">☀️</span>
+                                <h4 class="font-semibold text-white">Human Form (Day)</h4>
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-1 ml-9">
+                                <li>• Free exploration</li>
+                                <li>• NPC interactions</li>
+                                <li>• Safe travel in settlements</li>
+                                <li>• Cannot use vampire abilities</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blood-900/30 rounded-lg p-4 border border-blood-500/20">
+                            <div class="flex items-center mb-2">
+                                <span class="text-2xl mr-3">🌙</span>
+                                <h4 class="font-semibold text-blood-500">Vampire Form (Night)</h4>
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-1 ml-9">
+                                <li>• Enhanced combat abilities</li>
+                                <li>• Stealth and shadow powers</li>
+                                <li>• Soul absorption</li>
+                                <li>• NPCs may attack on sight</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combat System -->
+            <div class="card-hover bg-gray-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-red-600/20 to-orange-600/20 flex items-center justify-center">
+                    <span class="text-6xl">⚔️</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-2xl font-bold text-white mb-4">Combat System</h3>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Two distinct combat styles depending on your form. Master both to adapt to any situation.
+                    </p>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="text-gold-400 font-semibold mb-2">Human Combat</h4>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>• Sword and shield weapons</li>
+                                <li>• Parry and counterattack timing</li>
+                                <li>• Stamina management</li>
+                                <li>• Ranged options (bows, crossbows)</li>
+                            </ul>
+                        </div>
+                        <div class="border-t border-gray-700 pt-4">
+                            <h4 class="text-blood-500 font-semibold mb-2">Vampire Combat</h4>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>• Unarmed vampire strikes</li>
+                                <li>• Shadow dash attacks</li>
+                                <li>• Blood-powered abilities</li>
+                                <li>• Devastating finishers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Tree -->
+            <div class="card-hover bg-gray-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-purple-600/20 to-pink-600/20 flex items-center justify-center">
+                    <span class="text-6xl">📊</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-2xl font-bold text-white mb-4">Skill Tree</h3>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Unlock new abilities as you progress. Skills are divided into separate trees for human and vampire forms.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-blue-900/20 rounded-lg p-3 border border-blue-500/20">
+                            <h4 class="text-blue-400 font-semibold text-sm mb-2">Human Skills</h4>
+                            <ul class="text-gray-400 text-xs space-y-1">
+                                <li>• Combat Mastery</li>
+                                <li>• Parry Expert</li>
+                                <li>• Endurance</li>
+                                <li>• Sharp Eye (aim)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blood-900/20 rounded-lg p-3 border border-blood-500/20">
+                            <h4 class="text-blood-500 font-semibold text-sm mb-2">Vampire Skills</h4>
+                            <ul class="text-gray-400 text-xs space-y-1">
+                                <li>• Shadow Step</li>
+                                <li>• Blood Drain</li>
+                                <li>• Night Vision</li>
+                                <li>• Bat Swarm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soul Absorption -->
+            <div class="card-hover bg-gray-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-emerald-600/20 to-teal-600/20 flex items-center justify-center">
+                    <span class="text-6xl">👻</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-2xl font-bold text-white mb-4">Soul Absorption</h3>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Absorb souls from defeated enemies to power up your abilities and unlock new skills.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-gray-900/50 rounded-lg">
+                            <span class="text-gray-400 text-sm">Yellow Souls</span>
+                            <span class="text-yellow-400 font-medium">Health Regen</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-900/50 rounded-lg">
+                            <span class="text-gray-400 text-sm">Red Souls</span>
+                            <span class="text-red-400 font-medium">Upgrade Points</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-900/50 rounded-lg">
+                            <span class="text-gray-400 text-sm">Blue Souls</span>
+                            <span class="text-blue-400 font-medium">Special Abilities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-night-900 border-t border-gray-800 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blood-500 to-blood-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-gold-400 text-lg">D</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white">Dawnwalker Wiki</span>
+                </div>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <a href="/" class="hover:text-blood-500">Home</a>
+                    <a href="bosses.html" class="hover:text-blood-500">Bosses</a>
+                    <a href="quests.html" class="hover:text-blood-500">Quests</a>
+                    <a href="systems.html" class="hover:text-blood-500">Systems</a>
+                    <a href="collectibles.html" class="hover:text-blood-500">Collectibles</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Dawnwalker Wiki. Not affiliated with Rebel Wolves.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
