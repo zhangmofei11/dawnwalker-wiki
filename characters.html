@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes Guide - Dawnwalker</title>
+    <meta name="description" content="Complete Dawnwalker heroes guide. All hero classes, abilities, skill trees, and team compositions for optimal gameplay.">
+    <meta name="keywords" content="Dawnwalker heroes, hero classes, abilities guide, skill trees, team composition">
+    <link rel="canonical" href="https://dawnwalker-wiki.com/characters.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dawn: { 400: '#F59E0B', 500: '#D97706', 600: '#B45309' }
+                    },
+                    fontFamily: { 'title': ['Cinzel', 'serif'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0a0a0f 0%, #1a1a0f 100%); font-family: 'Inter', sans-serif; }
+        .card-dawn { background: linear-gradient(135deg, rgba(245,158,11,0.15) 0%, rgba(26,26,15,0.95) 100%); border: 1px solid rgba(245,158,11,0.3); }
+        .card-dawn:hover { border-color: rgba(245,158,11,0.6); transform: translateY(-2px); }
+    </style>
+</head>
+<body class="text-gray-300 antialiased">
+    <header class="bg-slate-950/95 border-b border-dawn-500/30 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-dawn-500 to-amber-900 flex items-center justify-center">
+                        <span class="text-xl">🌅</span>
+                    </div>
+                    <div>
+                        <span class="font-title text-xl text-dawn-400">DAWNWALKER</span>
+                        <span class="block text-xs text-gray-500 tracking-widest">WIKI</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2 text-sm">
+                    <a href="/" class="px-3 py-2 text-gray-400 hover:text-dawn-400 rounded transition-all">Home</a>
+                    <a href="characters.html" class="px-3 py-2 text-dawn-400 bg-dawn-500/10 rounded border border-dawn-500/30">Heroes</a>
+                    <a href="bosses.html" class="px-3 py-2 text-gray-400 hover:text-dawn-400 rounded transition-all">Bosses</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="font-title text-4xl md:text-5xl text-dawn-400 mb-4">HEROES GUIDE</h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">All heroes and their abilities</p>
+        </section>
+
+        <div class="h-0.5 bg-gradient-to-r from-transparent via-dawn-500 to-transparent mb-12"></div>
+
+        <!-- Tank Heroes -->
+        <section class="mb-12">
+            <h2 class="font-title text-2xl text-blue-400 mb-6">🛡️ TANK HEROES</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="card-dawn rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-3">Ironclad</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Ultimate: Shield Wall</li>
+                        <li>• Passive: Damage Reduction</li>
+                        <li>• Role: Main tank, team protection</li>
+                        <li>• Best paired with: Healers</li>
+                    </ul>
+                </div>
+                <div class="card-dawn rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-3">Guardian</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Ultimate: Divine Shield</li>
+                        <li>• Passive: Taunt enemies</li>
+                        <li>• Role: Off-tank, crowd control</li>
+                        <li>• Best paired with: DPS heroes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- DPS Heroes -->
+        <section class="mb-12">
+            <h2 class="font-title text-2xl text-red-400 mb-6">⚔️ DPS HEROES</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="card-dawn rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-3">Blademaster</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Ultimate: Whirlwind Strike</li>
+                        <li>• Passive: Critical Chance</li>
+                        <li>• Role: Single target damage</li>
+                        <li>• Best paired with: Tanks</li>
+                    </ul>
+                </div>
+                <div class="card-dawn rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-3">Shadow</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Ultimate: Death Mark</li>
+                        <li>• Passive: Backstab damage</li>
+                        <li>• Role: Burst damage, assassin</li>
+                        <li>• Best paired with: Crowd control</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Heroes -->
+        <section class="mb-12">
+            <h2 class="font-title text-2xl text-green-400 mb-6">💚 SUPPORT HEROES</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="card-dawn rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-3">Oracle</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Ultimate: Mass Heal</li>
+                        <li>• Passive: Healing boost</li>
+                        <li>• Role: Primary healer</li>
+                        <li>• Best paired with: All teams</li>
+                    </ul>
+                </div>
+                <div class="card-dawn rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-3">Mystic</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Ultimate: Time Warp</li>
+                        <li>• Passive: Cooldown reduction</li>
+                        <li>• Role: Buffs, utility</li>
+                        <li>• Best paired with: Heavy DPS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mage Heroes -->
+        <section class="mb-12">
+            <h2 class="font-title text-2xl text-purple-400 mb-6">🔮 MAGE HEROES</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="card-dawn rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-3">Archmage</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Ultimate: Meteor Storm</li>
+                        <li>• Passive: AOE damage boost</li>
+                        <li>• Role: AOE damage dealer</li>
+                        <li>• Best paired with: Control heroes</li>
+                    </ul>
+                </div>
+                <div class="card-dawn rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-3">Cryomancer</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Ultimate: Frozen Orb</li>
+                        <li>• Passive: Slow enemies</li>
+                        <li>• Role: Crowd control, damage</li>
+                        <li>• Best paired with: Melee DPS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Composition -->
+        <section class="mb-12">
+            <h2 class="font-title text-2xl text-dawn-400 mb-6">👥 TEAM COMPOSITIONS</h2>
+            <div class="card-dawn rounded-xl p-6">
+                <div class="grid md:grid-cols-2 gap-6 text-sm">
+                    <div>
+                        <h3 class="font-bold text-white mb-3">Balanced Team</h3>
+                        <ul class="text-gray-400 space-y-1">
+                            <li>• 1 Tank (Ironclad)</li>
+                            <li>• 1 Support (Oracle)</li>
+                            <li>• 1 Mage (Archmage)</li>
+                            <li>• 1 DPS (Blademaster)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white mb-3">Aggressive Team</h3>
+                        <ul class="text-gray-400 space-y-1">
+                            <li>• 1 Off-tank (Guardian)</li>
+                            <li>• 2 DPS (Shadow + Blademaster)</li>
+                            <li>• 1 Support (Mystic)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-dawn-500/10 py-8 mt-8">
+        <div class="max-w-6xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Dawnwalker Wiki. Not affiliated with developers.</p>
+        </div>
+    </footer>
+</body>
+</html>
