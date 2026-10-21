@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dawnwalker-wiki.com/sitemap.xml
